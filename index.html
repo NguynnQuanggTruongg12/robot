@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-controls">
+            <div class="enable-switch">
+                <label>ENABLE:</label>
+                <input type="checkbox" id="enable">
+            </div>
+            <select id="robotId">
+                <option value="robot1">ID_Robot</option>
+            </select>
+        </div>
+        <button id="cameraButton">Open Camera</button>
+        <div id="cameraFeed">Image_Received</div>
+        
+        <div class="control-panel">
+            <div class="control-row">
+                <button class="control-button" id="up">↑</button>
+            </div>
+            <div class="control-row">
+                <button class="control-button" id="left">←</button>
+                <button class="control-button" id="stop">⦿</button>
+                <button class="control-button" id="right">→</button>
+            </div>
+            <div class="control-row">
+                <button class="control-button" id="down">↓</button>
+            </div>
+        </div>
+        
+        
+        <div class="sliders">
+            <div class="slider">
+                <label>Straight speed: <span id="straightSpeed">0</span></label>
+                <input type="range" min="0" max="100" value="0" id="straightSpeedSlider">
+            </div>
+            <div class="slider">
+                <label>Rotation speed: <span id="rotationSpeed">0</span></label>
+                <input type="range" min="0" max="100" value="0" id="rotationSpeedSlider">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.enable-switch {
+    display: flex;
+    align-items: center;
+}
+
+#cameraFeed {
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    margin: 10px auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.control-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#stop {
+    background-color: red;
+}
+
+
+.sliders {
+    margin-top: 20px;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
